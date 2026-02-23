@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agentic IDE Workshop | Registration</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --bg: #0a0a0c;
@@ -34,7 +37,7 @@
             align-items: center;
             justify-content: center;
             overflow-x: hidden;
-            background-image: 
+            background-image:
                 radial-gradient(circle at 20% 20%, rgba(94, 92, 230, 0.15) 0%, transparent 40%),
                 radial-gradient(circle at 80% 80%, rgba(191, 90, 242, 0.1) 0%, transparent 40%);
         }
@@ -51,8 +54,13 @@
         }
 
         @keyframes float {
-            0% { transform: translateY(0) translateX(0); }
-            100% { transform: translateY(-1000px) translateX(100px); }
+            0% {
+                transform: translateY(0) translateX(0);
+            }
+
+            100% {
+                transform: translateY(-1000px) translateX(100px);
+            }
         }
 
         .container {
@@ -134,7 +142,8 @@
             padding-left: 4px;
         }
 
-        input, select {
+        input,
+        select {
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid var(--border);
             border-radius: 12px;
@@ -145,7 +154,8 @@
             outline: none;
         }
 
-        input:focus, select:focus {
+        input:focus,
+        select:focus {
             border-color: var(--primary);
             background: rgba(255, 255, 255, 0.08);
             box-shadow: 0 0 0 4px var(--primary-glow);
@@ -180,7 +190,7 @@
             transition: all 0.2s ease;
         }
 
-        .radio-option input:checked + .radio-label {
+        .radio-option input:checked+.radio-label {
             background: rgba(94, 92, 230, 0.1);
             border-color: var(--primary);
             color: var(--primary);
@@ -232,7 +242,7 @@
             display: none;
             width: 20px;
             height: 20px;
-            border: 2px solid rgba(255,255,255,0.3);
+            border: 2px solid rgba(255, 255, 255, 0.3);
             border-radius: 50%;
             border-top-color: #fff;
             animation: spin 1s ease-in-out infinite;
@@ -240,7 +250,9 @@
         }
 
         @keyframes spin {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         .success-state {
@@ -250,8 +262,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .success-icon {
@@ -268,6 +287,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="card" id="formCard">
@@ -316,7 +336,7 @@
         <div class="card success-state" id="successCard">
             <div class="success-icon">✓</div>
             <h1>You're In!</h1>
-            <p class="subtitle">Your spot has been reserved. Check your email for session details and pre-read materials.</p>
+            <p class="subtitle">You will soon receive an email for session details.</p>
             <div class="footer" style="margin-top: 32px;">
                 <span class="code-font">system: status = "confirmed"</span>
             </div>
@@ -336,7 +356,7 @@
 
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
+
             // UI State: Loading
             submitBtn.disabled = true;
             btnText.style.display = 'none';
@@ -368,7 +388,7 @@
             } catch (error) {
                 console.error('Error!', error.message);
                 alert('Something went wrong. Please try again or contact the organizer.');
-                
+
                 // Reset UI
                 submitBtn.disabled = false;
                 btnText.style.display = 'block';
@@ -392,4 +412,5 @@
         createParticles();
     </script>
 </body>
+
 </html>
