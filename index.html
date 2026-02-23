@@ -325,7 +325,7 @@
 
     <script>
         // Replace this with your Google Apps Script Web App URL
-        const SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxeD8VgozfjSgqomAbgxR06uEZlbvnpm66g8P3n0Zcs-TnK4LCYTgZxFUbksWiewsWj/exec';
 
         const form = document.getElementById('registrationForm');
         const formCard = document.getElementById('formCard');
@@ -351,21 +351,16 @@
             };
 
             try {
-                // If URL is not set, we simulate for demo purposes
-                if (SCRIPT_URL === 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE') {
-                    console.log('Simulating submission:', data);
-                    await new Promise(resolve => setTimeout(resolve, 1500));
-                } else {
-                    await fetch(SCRIPT_URL, {
-                        method: 'POST',
-                        mode: 'no-cors', // Apps Script requires no-cors for simple POST
-                        cache: 'no-cache',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify(data)
-                    });
-                }
+                // Submit to Apps Script
+                await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors', // Apps Script requires no-cors for simple POST
+                    cache: 'no-cache',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
 
                 formCard.style.display = 'none';
                 successCard.style.display = 'block';
