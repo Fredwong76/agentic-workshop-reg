@@ -155,10 +155,24 @@
         }
 
         input:focus,
-        select:focus {
+        select:focus,
+        textarea:focus {
             border-color: var(--primary);
             background: rgba(255, 255, 255, 0.08);
             box-shadow: 0 0 0 4px var(--primary-glow);
+        }
+
+        textarea {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 14px 16px;
+            color: white;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            outline: none;
+            resize: vertical;
+            min-height: 100px;
         }
 
         .radio-group {
@@ -322,6 +336,12 @@
                     </div>
                 </div>
 
+                <div class="input-group">
+                    <label for="interests">What interests you about Agentic IDEs? (Optional)</label>
+                    <textarea id="interests" name="interests"
+                        placeholder="e.g. automating code reviews, building customized tools, your specific use cases..."></textarea>
+                </div>
+
                 <button type="submit" id="submitBtn">
                     <span id="btnText">Secure My Spot</span>
                     <div class="spinner" id="btnSpinner"></div>
@@ -367,6 +387,7 @@
                 name: formData.get('name'),
                 email: formData.get('email'),
                 mode: formData.get('mode'),
+                interests: formData.get('interests'),
                 timestamp: new Date().toISOString()
             };
 
