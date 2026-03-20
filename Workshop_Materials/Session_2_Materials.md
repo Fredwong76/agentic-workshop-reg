@@ -45,3 +45,22 @@
 ### Step 4: Pushing to Production (GitHub Pages)
 *   **The Prompt:** *"This looks great locally. I want to host this for free. Walk me through pushing this folder to my GitHub repository and enabling GitHub Pages so it's live."*
 *   **Action Highlights:** Demonstrate that the IDE acts as an operational assistant. It can open the terminal, run Git commands, and execute deployment natively.
+
+---
+
+## 3. Demo Guide: The Content Automation Pipeline (Ideas to Assets)
+
+*(Live Demo: Turning raw markdown notes into a styled PowerPoint using scripts and CLI tools.)*
+
+### Teaching Point Before Demo
+*"Why show you two ways to do the same thing? Because Agentic IDEs adapt to your needs. If you want speed, you ask it to use an existing tool (Marp). If you want perfect, reusable corporate conformity, you ask it to write custom code (Python). The AI is your Junior Developer; you just dictate the strategy."*
+
+### Method 1: The "Marp" Quick-Conversion (The Low-Code Way)
+*   **The Setup:** Show the audience the raw `Marp_Premium.md` file layout. Point out that it's just raw text with some CSS logic at the top.
+*   **The Prompt:** *"I have a markdown file named `Marp_Premium.md`. I want to turn this into a professional PowerPoint. Please find the right command-line tool (like Marp), install it if necessary, and execute the command to generate `Marp_Presentation.pptx`."*
+*   **Action Highlights:** Show the IDE jumping into the terminal, installing the Marp CLI via npm, and running the conversion autonomously. You open the PPTX, and it's perfectly styled.
+
+### Method 2: The Python 'Pixel-Perfect' Generator (The Code Way)
+*   **The Prompt:** *"I need a pixel-perfect, highly customized slide deck. Write a Python script (`generate_premium_ppt.py`) using the `python-pptx` library. Create a 16:9 dark-mode slide with a slate background. Add rounded rectangle cards for 'Strongest Matches' and a red-bordered card for 'Identified Gaps'. Finally, add a glowing banner at the bottom for a 'Killer Question'. Run the script and save it as `Premium_Python_Presentation.pptx`."*
+*   **Action Highlights:** Show the script the AI generated (drawing shapes, setting exact RGB colors, positioning elements by inches). Then, run the script and open the output. 
+*   **The "NWOW" Moment:** Emphasize that you didn't drag a single box in PowerPoint. The AI translated your visual intent into Python code, allowing you to instantly generate 100 similar slides simply by feeding a CSV into this script later.
