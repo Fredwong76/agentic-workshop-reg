@@ -50,8 +50,8 @@
 ## 0:50 – 1:00 | The NWOW Roadmap: Your Career Upgrade
 *   **The Vision:** "Today was just a glimpse. Over the next six sessions, we are going to move you from being a **spectator** of this technology to being a **master architect** of it."
 *   **Why You Must Attend (The 3 Keys):**
-    1.  **From Magic to Mastery (Sessions 1 & 2):** We will move past 'generic prompts' and learn how to actually build end-to-end multi-language toolchains and data pipelines.
-    2.  **Solve Your Real Problems (Session 3):** This isn't theoretical. Session 3 is a **Business Use Case Lab** where you will bring your own customer RFP or technical bottleneck and build a working prototype live.
-    3.  **Governance & Safety (Session 4):** You’ll learn how to use these agents within the company's responsible AI framework, ensuring every solution we deliver is compliant, secure, and auditable.
-*   **The Final Word:** "The distance between a brilliant idea and a billion-dollar solution has never been shorter. This workshop series is your roadmap to closing that gap. Step into the NWOW. Sign up for Session 1 today."
+    1.  **From Magic to Mastery (Sessions 2 & 3):** We will move past 'generic prompts' and learn how to actually build end-to-end multi-language toolchains and data pipelines.
+    2.  **Solve Your Real Problems (Session 4):** This isn't theoretical. Session 4 is a **Business Use Case Lab** where you will bring your own customer RFP or technical bottleneck and build a working prototype live.
+    3.  **Governance & Safety (Session 5):** You’ll learn how to use these agents within the company's responsible AI framework, ensuring every solution we deliver is compliant, secure, and auditable.
+*   **The Final Word:** "The distance between a brilliant idea and a billion-dollar solution has never been shorter. This workshop series is your roadmap to closing that gap. Step into the NWOW. Sign up for Session 2 today."
 *   **Call to Action:** [Register for the Agentic IDE Workshop](https://fredwong76.github.io/agentic-workshop-reg/)
