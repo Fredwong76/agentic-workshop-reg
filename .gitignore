@@ -1,0 +1,19 @@
+# Private Folders
+antigravity-gcp-poc/
+Grant_Application/
+
+# Secrets
+workshop-manager-lps-*.json
+*.p12
+*.pem
+*.key
+
+# Local/Agent Specific
+.agentrules
+.gemini/
+Temp/
+node_modules/
+
+# OS Specific
+Thumbs.db
+.DS_Store

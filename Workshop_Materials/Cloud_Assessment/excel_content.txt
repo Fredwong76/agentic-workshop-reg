@@ -1,0 +1,46 @@
+--- Sheet: AWS - SOW Cloud Assessment  ---
+Row 0: Scope Of Work - LPS Comprehensive AWS Cloud Assessment and Optimization Blueprint (Well-Architected) per AWS Account/Compartment
+Row 2: Phase 1: Foundational Discovery and Technical Inventory
+Row 3: Establishing single source of truth for current resources, configurations, and interdependencies. Primary goal to generate foundational data required for deep-dive analysis in Phase 2, ensuring 100% visibility into current state of cost, security, and utilization.
+Row 4: Pillar Focus | Activity | Low-Level AWS Action / Task | SI Tooling/Methodology | Key Deliverable/Output
+Row 5: All Pillars | 1.1. Inventory & Tagging Compliance | Execute AWS CLI describe commands across EC2, RDS, ELB, S3 to collect all resource metadata. Use Resource Groups & Tag Editor to enforce tagging policies. | AWS CLI, AWS Config, AWS Resource Groups & Tag Editor | Validated Cloud Resource Inventory (with Owner/Application tags enforced), Tagging Compliance Report (identifying untagged resources).
+Row 6: All Pillars | 1.2. Application Dependency Mapping | Enable/Analyze VPC Flow Logs for all critical VPCs.
+
+Query S3/CloudWatch Log data using Amazon Athena to identify inter-resource communication paths (source/destination/port). | VPC Flow Logs, Amazon Athena, AWS Application Discovery Service (for on-prem) | Application Dependency Map (Visualization of inter-VPC/inter-Subnet traffic), VPC Flow Log Analysis Summary.
+Row 7: Security | 1.3. IAM Role & Credential Review (subject for assessment) | Generate and analyze the IAM Credential Report and IAM Access Analyzer findings to identify unused access keys, excessive permissions, and resource-based policy issues. | IAM Access Analyzer, IAM Credential Report | IAM Policy Remediation Priority List (High-Risk Policies), Least-Privilege Gap Analysis.
+Row 8: Performance Efficiency | 1.4. Workload Utilization Profiling | Collect 90-day utilization metrics (CPU, Memory, Disk IOPS) using CloudWatch. 
+
+Run AWS Compute Optimizer against EC2 fleet to generate right-sizing recommendations. | Amazon CloudWatch, AWS Compute Optimizer | Right-Sizing model (Compute Optimizer Recommendations Export). 
+
+(Optional) Utilization Dashboard (CloudWatch/QuickSight output).
+Row 9: Cost Optimization | 1.5. Current Cost Baseline Creation | Extract Cost and Usage Report (CUR) data from S3. Analyze cost trends and allocation using AWS Cost Explorer to define current OpEx. | AWS Cost Explorer, AWS Cost and Usage Report (CUR) | AWS Spend Baseline Report (by Service/Account/Tag), 3-Year TCO Analysis (with right-sizing adjustments).
+Row 12: Phase 2: Deep-Dive Analysis and Controls Validation
+Row 13: Leverages data collected in Phase 1 to perform specific, deep-dive audits against AWS Well-Architected Framework's best practices. Goal is to generate quantifiable findings across all six pillars and, where applicable, validate solutions.
+Row 14: Pillar Focus | Activity | Low-Level AWS Action / Task | SI Tooling/Methodology (Specific AWS Service) | Key Deliverable/Output
+Row 15: Security | 2.1. Centralized Security Posture Audit | Aggregate security findings from a accounts into AWS Security Hub. 
+
+Investigate findings from GuardDuty, Inspector, and Config Rules to prioritize violations. | AWS Security Hub, Amazon GuardDuty, AWS Config, Amazon Inspector | SecurityHub Findings Report (Prioritized List of Violations), Top 10 Security Configuration Gaps (e.g., public S3 buckets)
+Row 16: Security | 2.2. Network Security Rule Validation | Audit Security Group rules against the Dependency Map (1.2). 
+
+Use AWS Network Firewall or WAF logs to identify potential unauthorized traffic patterns. | AWS Config Rules (for Security Groups), AWS WAF/Network Firewall | Security Group Violation Report (Rules that allow excessive access), Network Access Control Plan.
+Row 17: Operational Excellence | 2.3. IaC & CI/CD Pipeline Review | Review AWS CodePipeline/CodeBuild configuration (Only if it is being configured)
+
+Audit CloudFormation/CDK templates for modularity, parameterization, and drift detection capabilities using AWS CloudFormation Drift Detection. | AWS CodePipeline, AWS CodeBuild, AWS CloudFormation (Drift Detection) | IaC Maturity Scorecard, Deployment Pipeline Efficiency Report.
+Row 18: Operational Excellence | 2.4. SSM Inventory & Patch Compliance | Use AWS Systems Manager (SSM) Inventory to collect in-guest OS details. 
+
+Check SSM Patch Manager compliance reports to identify unpatched critical instances. | AWS Systems Manager (SSM Inventory, Patch Manager) | SSM Inventory Compliance Report, Critical Patching Gap Analysis.
+Row 19: Reliability | 2.5. RTO/RPO Alignment Audit | Validate RTO/RPO requirements against capabilities of configured services (RDS Multi-AZ, AWS Backup retention policies, region setup). | AWS Backup, RDS Multi-AZ/Read Replicas, 
+AWS Elastic Disaster Recovery (DRS) - Upon failover, DRS launches full-capacity target instances in a different Availability Zone (AZ) than the one where your production workload failed. | RTO/RPO Feasibility Report, AWS Backup Policy Gap Analysis.
+Row 20: Sustainability | 2.6. Graviton & Efficiency Assessment | Use AWS Compute Optimizer to specifically flag instances that can be migrated to AWS Graviton processors (C, M, R compute families) for efficiency gains. | AWS Compute Optimizer, EC2 Instance Family Report | Graviton Migration Opportunity Report (with projected power reduction estimate).
+Row 23: Phase 3: Risk Remediation Blueprint
+Row 24: Synthesizes technical findings into a strategic, actionable implementation plan with focus on producing a final report serving as blueprint
+Row 25: Pillar Focus | Activity | Low-Level AWS Action / Task | SI Tooling/Methodology | Key Deliverable/Output
+Row 26: All Pillars | 3.1. Risk Remediation Blueprint | Consolidate all findings (Vulnerability, Cost, Efficiency) into a master spreadsheet. Assign a Business Risk Score (High/Medium/Low) and map to a projected Implementation Phase. | Master Assessment Spreadsheet (Consolidating all Phase 2 data), Risk Matrix Scoring Model | Cloud Remediation Blueprint Document (Includes Prioritized Risk Register and Phased Implementation Plan)
+
+Tools to Produce Blueprint: 
+1 - AWS Compute Optimizer Export
+2 - AWS Security Hub / GuardDuty Findings
+3 -  AWS Elastic Disaster Recovery (DRS) Audit
+Row 27: Operational Excellence | 3.2. Runbook & Incident Response Plan | Draft specific operational runbooks for common incidents (e.g. Auto Scaling failure, RDS failover) referencing AWS Systems Manager Automation Documents. | AWS Systems Manager Automation, Client Runbook Templates | Updated Incident Response Plan (integrated with Automation Documents).
+Row 28: All Pillars | 3.3. Final Assessment Report Handover | Generate final report document with Executive Summary, detailed findings per pillar, full Risk Register, and complete Blueprint (3.1). | Assessment Spreadsheet, Final Report Encrypted Document (PDF). | Encrypted Cloud Assessment Report Document.
+
