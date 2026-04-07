@@ -53,7 +53,7 @@ By the end of this session, participants will be able to:
 
 **Step 5: Profile Selection**
 - Return to the terminal and select:
-  - **Account:** `LPS_Managed_Prod (245650696234)`
+  - **Account:** `LPS-Sandbox (942226532280)`
   - **Role:** `Workshop-Student`
   - **CLI default client Region:** `ap-southeast-1`
   - **CLI profile name:** `workshop-student`
@@ -66,7 +66,7 @@ By the end of this session, participants will be able to:
   ```bash
   aws sts get-caller-identity --profile workshop-student
   ```
-- **Success Criteria:** The output should show the Account ID `245650696234`.
+- **Success Criteria:** The output should show the Account ID `942226532280`.
 
 **Step 7: Powering up Kiro**
 - Inform the participants that "AWS Kiro" uses the `--profile workshop-student` flag to interact with AWS.

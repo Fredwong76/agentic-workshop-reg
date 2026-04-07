@@ -21,8 +21,8 @@ This session transitions from local agentic workflows to cloud-integrated applic
 *   **09:15 - 09:30:** MFA Enrollment (Google/Microsoft Authenticator).
 *   **09:30 - 10:00:** Local CLI Configuration:
     *   Command: `aws configure sso`.
-    *   Target: `LPS_Managed_Prod` (Account 245650696234).
-    *   Verification: `aws sts get-caller-identity --profile workshop-student`.
+    *   Target: `LPS-Sandbox` (Account 942226532280).
+    *   Verification: `aws sts get-caller-identity --profile workshop-student` (Should show 942226532280).
 
 ### **Module 2: The Singapore Carpark Finder Lab (90 Minutes)**
 *   **10:00 - 10:20:** S3 Bucket Creation & Policy Management.
