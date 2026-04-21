@@ -1,6 +1,8 @@
 # Private Folders
 antigravity-gcp-poc/
 Grant_Application/
+**/Interviews/
+Attendance/
 
 # Secrets
 workshop-manager-lps-*.json

@@ -1,0 +1,34 @@
+Workshop Series Plan: Agentic IDEs as a New Way of Working (NWOW)
+Objective
+Equip teams across the company to understand, experiment with, and adopt Agentic IDEs as a new, efficient way of working—reducing friction in AI development, accelerating solution delivery, and embedding responsible AI practices.
+Series Overview
+1. Executive & Team Awareness
+2. Foundations & Capabilities
+3. Hands-on Basics
+4. Applied Use Cases
+5. Responsible AI & Governance
+6. Adoption & Roadmap
+Detailed Workshop Plan
+Session 1 — Introduction & Management Alignment
+- Create awareness of Agentic IDEs
+- Align leaders on value, benefits, urgency
+- Output: Management buy-in, priority areas
+Session 2 — Capabilities Deep Dive
+- Demonstrate end-to-end capabilities
+- Multi-language toolchain integration
+- Output: Understanding of capabilities, initial use cases
+Session 3 — Hands-On Fundamentals
+- Build basic competence
+- Exercises: code generation, data pipeline, microservice deployment
+- Output: Practitioners gain hands-on experience
+Session 4 — Business Use Case Labs
+- Teams prototype real use cases
+- Output: Working prototypes, prioritized backlog
+Session 5 — Responsible AI & Governance
+- Built-in guardrails, compliance, auditability
+- Output: Alignment with Risk/Compliance/Security
+Session 6 — Adoption Strategy & NWOW Rollout
+- Maturity model, talent uplift, roadmap
+- Output: Draft rollout plan, defined ownership
+
+Registration Link: https://fredwong76.github.io/agentic-workshop-reg/
