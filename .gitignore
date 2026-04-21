@@ -1,21 +1,9 @@
-# Private Folders
-antigravity-gcp-poc/
-Grant_Application/
-**/Interviews/
-Attendance/
+# Ignore everything
+/*
 
-# Secrets
-workshop-manager-lps-*.json
-*.p12
-*.pem
-*.key
+# Except the Materials folder (Workshop_Materials on GitHub)
+!/Workshop_Materials/
 
-# Local/Agent Specific
-.agentrules
-.gemini/
-Temp/
-node_modules/
-
-# OS Specific
-Thumbs.db
-.DS_Store
+# And essential git files
+!.gitignore
+!README.md
